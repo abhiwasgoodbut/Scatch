@@ -5,8 +5,7 @@ const config = require("config");
 
 mongoose.connect(`${config.get("MONGODB_URI")}/scatch`)
 .then(function(){
-    dbgr("connected");
-    console.log("connected");
+    dbgr("connected"); 
     
 })
 .catch(function(err){
