@@ -9,6 +9,8 @@ const productsRouter = require("./routes/productsRouter");
 const usersRouter = require("./routes/usersRouter");
 const index = require("./routes/index");
 
+require("dotenv").config()
+
 const db = require("./config/mongoose-connection");
 
 app.set('view engine', "ejs");
