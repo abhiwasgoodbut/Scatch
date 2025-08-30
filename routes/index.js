@@ -14,5 +14,8 @@ router.get("/shop", isLoggedIn, function(req,res){
     ];
     res.render("shop", { products });
 })
-
+ 
+router.get("/admin",function(req,res){
+    res.render("admin")
+})
 module.exports = router;

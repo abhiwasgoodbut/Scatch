@@ -3,8 +3,8 @@ const router = express.Router();
 const ownerModel = require("../models/owner-model");
 
 
-router.get("/",function(req,res){
-    res.send("hey");
+router.get("/admin",function(req,res){
+    res.render("createproducts");
 });
 
 if(process.env.NODE_ENV === "development"){
