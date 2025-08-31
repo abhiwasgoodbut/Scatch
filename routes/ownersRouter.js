@@ -4,7 +4,8 @@ const ownerModel = require("../models/owner-model");
 
 
 router.get("/admin",function(req,res){
-    res.render("createproducts");
+   let success = req.flash("success");
+    res.render("createproducts",{success});
 });
 
 if(process.env.NODE_ENV === "development"){
