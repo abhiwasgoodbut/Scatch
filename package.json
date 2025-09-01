@@ -23,6 +23,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.17.2",
     "multer": "^2.0.2",
+    "razorpay": "^2.9.6",
     "react": "^19.1.1"
   }
 }

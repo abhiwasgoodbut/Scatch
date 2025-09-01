@@ -10,6 +10,7 @@ const ownersRouter = require("./routes/ownersRouter");
 const productsRouter = require("./routes/productsRouter");
 const usersRouter = require("./routes/usersRouter");
 const index = require("./routes/index");
+const payment = require("./routes/payment");
 
 require("dotenv").config()
 
@@ -40,6 +41,7 @@ app.use(flash());
 app.use("/owners", ownersRouter);
 app.use("/users", usersRouter);
 app.use("/products", productsRouter);
+app.use("/payment", payment)
 app.use("/", index);
 
 app.listen(3030);
