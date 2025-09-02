@@ -44,4 +44,4 @@ app.use("/products", productsRouter);
 app.use("/payment", payment)
 app.use("/", index);
 
-app.listen(3030);
+app.listen(process.env.PORT);

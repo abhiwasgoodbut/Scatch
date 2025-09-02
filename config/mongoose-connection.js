@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const dbgr = require("debug")("development:mongoose");
 const config = require("config");
 
-mongoose.connect(`${config.get("MONGODB_URI")}/scatch`)
+mongoose.connect(process.env.MONGO_URI)
 .then(function(){
     dbgr("connected"); 
     
